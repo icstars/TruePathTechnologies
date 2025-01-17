@@ -1,0 +1,25 @@
+.headerBox {
+    border: 1px solid black;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.logo, .userProfile, .headerBox {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border: 1px dashed green;
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 20px;
+}
