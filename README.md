@@ -1,3 +1,5 @@
 # TruePathTechnologies
-Contributors
-Jozelyn
+## Threshub
+Contributors:
+Travis Rosario
+Jozelyn Puente
