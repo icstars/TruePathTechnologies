@@ -1,0 +1,13 @@
+.navbarBox {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border: 1px solid black;
+}
