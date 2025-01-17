@@ -1,3 +1,6 @@
 # TruePathTechnologies
-Contributors:
-Christian
+## ThresHub App
+### Contributors:
+Travis Rosario
+Jozelyn Puente
+Christian Acosta
