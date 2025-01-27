@@ -5,5 +5,5 @@ export default function Directory() {
     <div>
       <p>Directory</p>
     </div>
-  )
-}
+  );
+};
