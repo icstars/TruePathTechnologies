@@ -1,4 +1,7 @@
 // import styles from './LoginForm.module.css'
+import React from "react"
+// import {signInWithMicrosoft} from "./auth"
+
 export default function LoginForm() {
 
         return (
@@ -12,7 +15,6 @@ export default function LoginForm() {
                 </div>
 
                 <p className="separator"><span>or</span></p>
-
                 <form action="#" className="login-form">
                     <div className="input-wrapper">
                         <input type="email" placeholder="Email Address" className="input-field" required/>
