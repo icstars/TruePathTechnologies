@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./UpdatesCard.module.css"
 
 const UpdatesCard = ({ title, date, summary, link }) => {
   return (
-    <div className="w-full mb-4 border shadow-md p-4 rounded-2xl">
+    <div className={styles.cardBox}>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-sm text-gray-500 mb-2">{date}</p>
       <p className="text-base mb-4">{summary}</p>
