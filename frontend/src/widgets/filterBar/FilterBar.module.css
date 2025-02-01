@@ -1,0 +1,11 @@
+.filterbar{
+    width: 400px; 
+    margin: 20px auto;
+    background: #f4f4f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 450px;
+}
