@@ -1,7 +1,10 @@
 import UpdatesCard from "../../widgets/UpdatesCard/UpdatesCard";
 import styles from "./Dashboard.module.css";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 
 export default function Dashboard() {
+  let value = Date()
   const mocknews = [
     {
       "title": "Thresholds Named a Chicago Tribune Top Workplace 2024",
@@ -36,12 +39,17 @@ export default function Dashboard() {
   ];
 
   return (
-    <div>
-      <p>News</p>
+    <div className={styles.dashboardBox}>
+      
       <div className={styles.newsBox}>
+      <p>News</p>
         {
-          mocknews.map(item=><UpdatesCard key={item.date} title={item.title} date={item.date}/>)
+          mocknews.map(item=><UpdatesCard key={item.date} {...item}/>)
         }
+      </div>
+      <div className={styles.eventsBox}>
+      <p>Events</p>
+        <Calendar showWeekNumbers value={value}/>
       </div>
     </div>
   )
