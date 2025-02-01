@@ -4,8 +4,9 @@ import styles from './Navbar.module.css';
 export default function Navbar() {
   const links = [
     { path: '/dashboard', label: 'Dashboard' },
-    { path: '/directory', label: 'Directory' },
     { path: '/chat', label: 'AI Assistant' },
+    { path: '/directory', label: 'Directory' },
+    { path: '/resources', label: 'Resources' },
     //{ path: '/home', label: 'Home' },
   ];
 

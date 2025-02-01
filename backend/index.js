@@ -16,7 +16,7 @@ const db = mysql.createConnection({
     user: 'test', // Replace with your MySQL username
     port: 3306, // Replace with the port you need - may be different from mine
     password: 'test', // Replace with your MySQL password
-    database: 'test', // Replace with your database name
+    database: 'thresholds', // Replace with your database name
 });
 
 db.connect((err) => {

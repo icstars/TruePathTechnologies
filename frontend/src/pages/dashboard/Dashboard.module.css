@@ -1,0 +1,9 @@
+.dashboardBox {
+    display: flex;
+    gap: 5%;
+}
+
+.newsBox {
+    width: 80%;
+}
+

@@ -24,6 +24,7 @@ export default function FilterBar() {
                 <option>215 South State</option>
               </select>
 
+              <input type="submit" />
               
             </form>
           </div>
