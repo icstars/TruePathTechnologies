@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.eventsBox {
+    width: 360px;
+}
+
 .dashTitles {
     margin-bottom: 20px;
     font-size: 1.2em;

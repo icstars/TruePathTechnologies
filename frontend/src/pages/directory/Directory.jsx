@@ -7,7 +7,7 @@ export default function Directory() {
 
   useEffect(() => {
     async function getAllEmployees() {
-      let response = await fetch("http://localhost:3000/employees");
+      let response = await fetch("http://localhost:5000/employees");
       let employees = await response.json();
       console.log(employees);
       setEmployeeList(employees);
