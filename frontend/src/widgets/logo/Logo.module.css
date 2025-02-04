@@ -1,0 +1,16 @@
+/* fix it later */
+.logoBox {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.logoBox img {
+    width: 8vw;
+}
+
+.logoBox span {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}

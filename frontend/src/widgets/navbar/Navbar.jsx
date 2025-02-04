@@ -1,4 +1,4 @@
-import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -13,9 +13,9 @@ export default function Navbar() {
   return (
     <div className={styles.navbarBox}>
       {links.map((link, index) => (
-        <Link className={styles.link} key={index} to={link.path}>
+        <NavLink  className={({ isActive }) => isActive ? styles.activeLink : styles.link} key={index} to={link.path}>
           {link.label}
-        </Link>
+        </NavLink>
       ))}
     </div>
   );

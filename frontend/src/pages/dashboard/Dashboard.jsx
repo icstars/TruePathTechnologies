@@ -42,13 +42,13 @@ export default function Dashboard() {
     <div className={styles.dashboardBox}>
       
       <div className={styles.newsBox}>
-      <p>News</p>
+      <p className={styles.dashTitles}>News</p>
         {
           mocknews.map(item=><UpdatesCard key={item.date} {...item}/>)
         }
       </div>
       <div className={styles.eventsBox}>
-      <p>Events</p>
+      <p className={styles.dashTitles}>Events</p>
         <Calendar showWeekNumbers value={value}/>
       </div>
     </div>

@@ -23,7 +23,7 @@
 }
 
 /* Profile Image */
-img {
+.profileCardImg {
     display: block;
     margin: 0; 
     height: 160px;

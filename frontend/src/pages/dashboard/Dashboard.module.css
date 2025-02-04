@@ -1,9 +1,46 @@
 .dashboardBox {
+    width: 100%;
     display: flex;
-    gap: 5%;
+    justify-content: space-between;
 }
 
 .newsBox {
     width: 80%;
 }
+.newsBox, .eventsBox {
+    padding: 20px;
+}
+
+.dashTitles {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--blue);
+}
+
+@media (min-width: 490px) and (max-width: 790px) {
+    .dashboardBox {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .newsBox, .eventsBox {
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .dashboardBox {
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .newsBox, .eventsBox {
+        width: 100%;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+}
+
 

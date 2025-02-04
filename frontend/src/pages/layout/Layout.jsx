@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router'
 import Navbar from '../../widgets/navbar/Navbar'
 import styles from './Layout.module.css'
 import Home from '../home/Home'
+import Logo from '../../widgets/logo/Logo'
 
 export default function Layout() {
   const currentLocation = useLocation()
@@ -13,14 +14,18 @@ currentLocation.pathname === "/"
   ? <Home />
   :
     <div className={styles.layoutBox}>
-      <Header />
-      <div className={styles.content}>
       <nav className={styles.navbar}>
+        <div className={styles.logoVisibility}>
+          <Logo/>
+        </div>
+        
         <Navbar />
       </nav>
-      <div className={styles.pages}>
-        <Outlet />
-      </div>
+      <div className={styles.content}>
+        <Header />
+        <div className={styles.pages}>
+          <Outlet />
+        </div>
       </div>
 
     </div>

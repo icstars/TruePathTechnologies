@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./USerProfileCard.module.css";
+import styles from "./UserProfileCard.module.css";
 
 const UserProfileCard = ({ profilePicture, userName }) => {
   return (
@@ -9,7 +9,7 @@ const UserProfileCard = ({ profilePicture, userName }) => {
         alt={`${userName}'s profile`}
         className={styles.userProfileImage}
       />
-      <span className={styles.userProfileName}>{userName || "jon doe"}</span>
+      <span className={styles.userProfileName}>{userName || "Jon Doe"}</span>
     </div>
   );
 };
