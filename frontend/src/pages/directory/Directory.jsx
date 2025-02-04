@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from './Directory.module.css'
 import FilterBar from "../../widgets/filterBar/FilterBar";
 import ProfileCard from "../../widgets/profileCard/ProfileCard";
 
@@ -17,12 +18,14 @@ export default function Directory() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.directoryBox}>
       <p>Directory</p>
       <FilterBar />
+      <div className={styles.userCardBox}>
       {employeeList.map((employee) => (
         <ProfileCard key={employee.id} {...employee} />
       ))}
+      </div>
     </div>
   );
 }

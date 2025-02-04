@@ -1,0 +1,7 @@
+.userCardBox {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(auto, 250px);
+    gap: 50px;
+    margin-top: 20px;
+}

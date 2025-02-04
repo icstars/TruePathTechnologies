@@ -14,9 +14,8 @@ export default function ProfileCard({
 }) {
   return (
     <div className={styles.pfc}>
-      <div className={styles.profileSection}></div>
-      <div className={styles.gradient}></div>
-      <img
+      <div className={styles.profileTitleWrap}>
+        <img
       className={styles.profileCardImg}
         src="https://static.vecteezy.com/system/resources/thumbnails/019/879/186/small_2x/user-icon-on-transparent-background-free-png.png"
         alt="User-Icon"
@@ -26,16 +25,18 @@ export default function ProfileCard({
         <h2>{department_code}</h2>
         <h2>{job_title}</h2>
       </div>
+      </div>
+      
+
       <div className={styles.vl}></div>
 
       <div className={styles.bawdy}>
-        <p>Company Name: Thresholds</p>
-        <p>Office Location:{office_location}</p>
-        <p>Street Address: {street_address}</p>
-        <p>City: {city}</p>
-        <p>Postal Code: {postal_code}</p>
-        <p>Business Phone Number: {business_phone}</p>
-        <p>Email: {business_phone}</p>
+        <p className={styles.textWrap}><i className="material-symbols-outlined">domain</i> Thresholds</p>
+        <p className={styles.textWrap}><i className="material-symbols-outlined">location_on</i>
+          {`${street_address} ${office_location} ${postal_code} ${city}`}
+        </p>    
+        <p className={styles.textWrap}><i className="material-symbols-outlined">phone</i>{business_phone} </p>
+        <p className={styles.textWrap}><i className="material-symbols-outlined">email</i> {email}</p>
       </div>
     </div>
   );
