@@ -1,0 +1,94 @@
+.homeBox {
+    background: var(--wp--preset--color--background--gradient);
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContentBox {
+    width: 70vw;
+    margin: 0 auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.loginBox  {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeCard {
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+}
+
+.welcomeCard h2 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.welcomeCard h1{
+    color: white;
+    margin-top: 10vh;
+    font-size: 2.5rem;
+    width: 200px;
+}
+
+.loginBox {
+}
+
+
+@media (min-width: 490px) and (max-width: 790px) {
+    .homeBox {
+        padding: 20px;
+        
+    }
+    .homeContentBox{
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 10vh;
+    }
+    .loginBox, .welcomeCard {
+        width: 100%;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .welcomeCard h1 {
+        width: 100%;
+        margin-top: 10vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .homeBox {
+        padding: 0;
+        
+    }
+    .homeContentBox{
+        flex-direction: column;
+        width: 100%;
+    }
+    .loginBox, .welcomeCard {
+        width: 100%;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .welcomeCard h1 {
+        width: 100%;
+        margin-top: 5vh;
+    }
+  }

@@ -1,9 +1,20 @@
+import LoginForm from "../../widgets/loginForm/LoginForm";
+import styles from "./Home.module.css";
 
 
 export default function Home() {
   return (
-    <div>
-       <p>Home page</p>
+    <div className={styles.homeBox}>
+      <div className={styles.homeContentBox}>
+      <div className={styles.welcomeCard}>
+        <h2>ThresHub</h2>
+        <h1>Everything you need is here... </h1>
+      </div>
+      <div className={styles.loginBox}>
+        <LoginForm/>
+      </div>
+      </div>
+
     </div>
   )
 }

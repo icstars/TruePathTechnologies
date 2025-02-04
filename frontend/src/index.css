@@ -22,6 +22,7 @@
   --wp--preset--secondary--font--family: "Montserrat", serif;
   --wp--preset--tertiary--font--family: "Hind", serif;
   --wp--preset--quaternary--font--family: "Open Sans", serif;
+  --wp--preset--color--background--gradient:linear-gradient(90deg, rgba(123,81,167,1) 0%, rgba(157,86,233,1) 43%, rgba(84,193,241,0.9894082633053222) 100%, rgba(45,186,247,1) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
