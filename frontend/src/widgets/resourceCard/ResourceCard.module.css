@@ -42,3 +42,20 @@
     color: var(--wp--preset--color--dark-blue);
     text-decoration: underline;
 }
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .resourceCardBox h2 {
+        font-size: 1.2em;
+        text-align: start;
+    }
+    
+    .resourceCardBox p {
+        font-size: 1em;
+        color: var(--wp--preset--color--dark-grey);
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+
+}

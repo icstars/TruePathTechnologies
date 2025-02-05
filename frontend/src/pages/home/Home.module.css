@@ -20,7 +20,7 @@
     padding: 20px;
 }
 
-.loginBox  {
+.loginBox {
     width: 50%;
     display: flex;
     align-items: center;
@@ -39,56 +39,95 @@
     font-size: 1.4rem;
 }
 
-.welcomeCard h2{
+.welcomeCard h2 {
     color: white;
     margin-top: 10vh;
     font-size: 2.5rem;
     width: 200px;
 }
 
-.loginBox {
+
+@media (min-width: 1660px) and (max-width: 4024px) {
+    .homeContentBox {
+        width: 1440px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcomeCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        padding: 6rem;
+    }
+
+    .welcomeCard h2,
+    h3 {
+        width: 80%;
+        font-size: 3rem;
+    }
 }
 
-
-@media (min-width: 490px) and (max-width: 790px) {
+@media (min-width: 490px) and (max-width: 1024px) {
     .homeBox {
         padding: 20px;
-        
     }
-    .homeContentBox{
+
+    .homeContentBox {
         flex-direction: column;
-        width: 90%;
+        height: fit-content;
         padding-bottom: 10vh;
+        margin: 0 auto;
     }
-    .loginBox, .welcomeCard {
-        width: 100%;
+
+    .loginBox,
+    .welcomeCard {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    h1, h2 {
+
+    h2,
+    h3 {
         text-align: center;
     }
-    .welcomeCard h1 {
+
+    .welcomeCard h2 {
         width: 100%;
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 }
 
 @media (min-width: 320px) and (max-width: 490px) {
-    .homeBox {
-        padding: 0;
-        
-    }
-    .homeContentBox{
+    .homeContentBox {
         flex-direction: column;
-        width: 100%;
+        height: fit-content;
+        padding-bottom: 10vh;
+        margin: 0 auto;
     }
-    .loginBox, .welcomeCard {
-        width: 100%;
+
+    .loginBox,
+    .welcomeCard {
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    h1, h2 {
+
+    h2,
+    h3 {
         text-align: center;
     }
-    .welcomeCard h1 {
+
+    .welcomeCard h2 {
         width: 100%;
         margin-top: 5vh;
+        font-size: 1.8rem;
     }
-  }
+}

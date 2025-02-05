@@ -10,31 +10,61 @@
     text-decoration: none;
     color: var(--wp--preset--color--purple);
     margin-bottom: 15px;
-    padding: 10px 0;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .link {
     text-decoration: none;
-    color: white;
+    color: var(--wp--preset--color--white);
     margin-bottom: 15px;
-    padding: 10px 0;
-    border: 0.5px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-@media (min-width: 490px) and (max-width: 790px) {
+@media (min-width: 490px) and (max-width: 1024px) {
+    .navbarBox {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .link, 
+    .activeLink {
+        margin: 0;
+        height: fit-content;
+    }
+
+    .navBarLinkText {
+        display: none;
+    }
 
 }
 
 @media (min-width: 320px) and (max-width: 490px) {
     .navbarBox {
-        width: 100%;
+        max-width: 100%;
         flex-direction: row;
-        height: 10vh;
         justify-content: space-between;
+        padding: 20px;
+    }
+
+    .link, 
+    .activeLink {
+        margin: 0;
+        height: fit-content;
+    }
+
+    .navBarLinkText {
+        display: none;
     }
 }

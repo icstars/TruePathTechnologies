@@ -17,7 +17,18 @@
     visibility: hidden;
 }
 
-@media (min-width: 490px) and (max-width: 790px) {
+@media (min-width: 490px) and (max-width: 1024px) {
+    .headerBox {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .logoVisibility {
+        visibility: visible;
+    }
 
 }
 
@@ -27,6 +38,7 @@
         top: 0;
         background-color: white;
         padding: 5px;
+        height: 10vh;
     }
 
     .logoVisibility {

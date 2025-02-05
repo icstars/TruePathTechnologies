@@ -67,7 +67,7 @@ const ChatBot = () => {
 
         };
 
-        const tokenEndpointURL = new URL('https://default88227c99d1574dbe8e33d8b3fcc295.77.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr69f_lifeCoach/directline/token?api-version=2022-03-01-preview');
+        const tokenEndpointURL = new URL('https://default88227c99d1574dbe8e33d8b3fcc295.77.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr69f_agentKgArTj/directline/token?api-version=2022-03-01-preview');
         const locale = document.documentElement.lang || 'en';
         const apiVersion = tokenEndpointURL.searchParams.get('api-version');
 
