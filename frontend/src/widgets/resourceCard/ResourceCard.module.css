@@ -11,17 +11,34 @@
 }
 
 .category {
+    width: fit-content;
+    background-color: rgba(228, 199, 36, 0.858);
     display: flex;
     align-items: center;
     gap: 10px;
-    color: brown;
+    color: rgb(255, 255, 255);
     font-size: 1em;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .resourceCardBox h2 {
     font-size: 1.4em;
+    color: var(--wp--preset--color--dark-blue);
 }
 
 .resourceCardBox p {
     font-size: 1.2em;
+    color: var(--wp--preset--color--dark-grey);
+}
+
+.resourceCardBox a {
+    color: var(--wp--preset--color--pale-cyan-blue);
+}
+
+.resourceCardBox a:hover {
+    color: var(--wp--preset--color--dark-blue);
+    text-decoration: underline;
 }

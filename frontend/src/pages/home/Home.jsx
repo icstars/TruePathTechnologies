@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.homeContentBox}>
       <div className={styles.welcomeCard}>
         <h2>ThresHub</h2>
-        <h1>Everything you need is here... </h1>
+        <h2>Everything you need is here... </h2>
       </div>
       <div className={styles.loginBox}>
         <LoginForm/>

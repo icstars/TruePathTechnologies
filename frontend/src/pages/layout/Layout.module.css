@@ -1,23 +1,26 @@
 .layoutBox {
     height: 100vh;
     display: flex;
+    overflow-y: hidden;
 }
 
 .content {
     background-color: #e8eefa15;
     width: 75%;
+    height: 100vh;
 }
 
 .navbar {
     width: 20%;
-    height: 100%;
+    height: 100vh;
     padding: 20px;
     background: var(--wp--preset--color--background--gradient--2);
     box-shadow: rgba(50, 50, 105, 0.31) 0px 2px 5px 0px, rgba(0, 0, 0, 0.138) 0px 1px 1px 0px;
 }
 
 .pages {
-    padding: 20px;
+    width: 100%;
+    height: 90vh;
 }
 
 @media (min-width: 490px) and (max-width: 790px) {

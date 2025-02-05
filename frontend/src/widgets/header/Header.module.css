@@ -1,10 +1,10 @@
 .headerBox {
     width: 100%;
-    padding: 20px;
-    height: 8vh;
-    min-height: 50px;
+    padding: 3vh;
+    height: 7vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid lightgray;
 }
 
@@ -13,12 +13,8 @@
     text-align: center;
 }
 
-.userProfile {
-    margin-right: 0;
-}
-
 .logoVisibility {
-    display: none;
+    visibility: hidden;
 }
 
 @media (min-width: 490px) and (max-width: 790px) {
@@ -34,6 +30,6 @@
     }
 
     .logoVisibility {
-        display: block;
+        visibility: visible;
     }
 }

@@ -21,7 +21,7 @@ export default function ProfileCard({
         alt="User-Icon"
       />
       <div className={styles.profileTitle}>
-        <h1>{display_name}</h1>
+        <h2>{display_name}</h2>
         <h2>{department_code}</h2>
         <h2>{job_title}</h2>
       </div>

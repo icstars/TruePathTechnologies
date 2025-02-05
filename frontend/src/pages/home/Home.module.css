@@ -2,10 +2,10 @@
     background: var(--wp--preset--color--background--gradient);
     width: 100vw;
     height: 100vh;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .homeContentBox {
@@ -33,13 +33,13 @@
     padding: 20px;
 }
 
-.welcomeCard h2 {
+.welcomeCard h3 {
     color: white;
     margin-top: 0;
     font-size: 1.4rem;
 }
 
-.welcomeCard h1{
+.welcomeCard h2{
     color: white;
     margin-top: 10vh;
     font-size: 2.5rem;

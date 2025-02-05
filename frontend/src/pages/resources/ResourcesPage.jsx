@@ -17,7 +17,7 @@ export default function ResourcesPage() {
   return (
     <div className={styles.resourcesPage}>
       <p className={styles.dashTitles}>Resources</p>
-      <div>
+      <div className={styles.resourceCardBox}>
         {
           resourcesList.map((item, index)=> <ResourceCard key={index} {...item}/>)
         }
