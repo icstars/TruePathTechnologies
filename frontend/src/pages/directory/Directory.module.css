@@ -5,3 +5,9 @@
     gap: 50px;
     margin-top: 20px;
 }
+
+.dashTitles {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--blue);
+}

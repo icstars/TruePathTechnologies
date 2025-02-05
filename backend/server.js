@@ -7,7 +7,7 @@ const app = express()
 // if you close your terminal window without properly stopping the server
 // it'll be there for a while
 const port = 5000;
-app.use(cors({ origin: 'http://localhost:5174' }));
+app.use(cors({ origin: 'http://localhost:5173' }));
 
 const db = mysql.createConnection({
     host: 'thresholds-test.mysql.database.azure.com',
