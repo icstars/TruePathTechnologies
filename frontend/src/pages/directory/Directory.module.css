@@ -1,0 +1,20 @@
+.directoryBox {
+    padding: 20px;
+    background-color: #ECF0F7;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.userCardBox {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(auto, 250px);
+    gap: 50px;
+    margin-top: 20px;
+    height:calc(90vh - 200px);
+    overflow-y: scroll;
+}
+
+.dashTitles {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--blue);
+}

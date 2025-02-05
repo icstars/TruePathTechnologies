@@ -1,3 +1,24 @@
-.chatbox iframe{
-    width: 100%;
+.chatbox{
+    /* width: 100%;
+    height: calc(90vh - 170px); */
 }
+
+h1 {
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 20px;
+    min-height: 30px;
+    background: var(--wp--preset--color--blue);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #webchat {
+    height: calc(100% - 70px);
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+  }

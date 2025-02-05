@@ -1,25 +1,47 @@
 .headerBox {
-    border: 1px solid black;
-    padding: 20px;
-    justify-content: space-between;
-}
-
-.logo, .userProfile, .headerBox {
+    width: 100%;
+    padding: 3vh;
+    height: 7vh;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 }
 
-.logo img {
-    border: 1px dashed green;
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+.title {
+    color: white;
+    text-align: center;
 }
 
-.userImg {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    border-radius: 50%;
-    margin-right: 20px;
+.logoVisibility {
+    visibility: hidden;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .headerBox {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .logoVisibility {
+        visibility: visible;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .headerBox {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .logoVisibility {
+        visibility: visible;
+    }
 }

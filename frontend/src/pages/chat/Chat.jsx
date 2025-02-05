@@ -1,10 +1,10 @@
 import ChatBot from "../../widgets/chatBot/ChatBot";
+import styles from "./Chat.module.css"
 
 
 export default function Chat() {
   return (
-    <div>
-      <p>Chat</p>
+    <div className={styles.chatBox}>
       <ChatBot/>
     </div>
   )
