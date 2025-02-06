@@ -1,4 +1,3 @@
-import { Link } from "react-router"
 import styles from "./Header.module.css"
 import UserProfileCard from "../userProfileCard/UserProfileCard"
 import Logo from "../logo/Logo"

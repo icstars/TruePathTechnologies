@@ -1,13 +1,13 @@
 /* Card Container */
 .pfc {
-    width: 100%; 
+    width: 100%;
     min-width: 130px;
     border-radius: 12px;
     background: #ffffff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 400px;
     padding: 10px;
 }
@@ -20,7 +20,7 @@
     border-radius: 50%;
     border: 3px solid white;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.133);
 }
 
 .profileTitleWrap {
@@ -33,18 +33,25 @@
 
 /* Employee Name, Department, and Title */
 .profileTitle {
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: bold;
-    color: #343a40;
     text-align: center;
     margin-top: 15px;
     height: 60px;
+    font-family: "Lato", serif;
+    font-style: normal;
+
 }
 
-/* Profile Details */
-.profileDetails {
-    color: #6c757d;
-    font-size: 10px; 
+.profileTitle h2 {
+    color: var(--wp--preset--color--dark-blue);
+    font-weight: 700;
+}
+
+.profileTitle p {
+    color: var(--wp--preset--color--vivid-purple);
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 /* Vertical Line */
@@ -52,7 +59,7 @@
     margin: 10px 0;
     border-bottom: 2px solid #ddd;
     width: 100%;
-    flex-grow: 0; 
+    flex-grow: 0;
 }
 
 /* Card Body */
@@ -72,12 +79,14 @@
     align-items: center;
     gap: 10px;
     height: 50px;
+    font-family: "Hind", serif;
+    color: var(--wp--preset--color--dark-blue);
+}
+
+.textWrap i {
+    color: var(--wp--preset--color--blue);
 }
 
 .textWrap:last-child {
-    font-size: 12px;
+    font-size: 13px;
 }
-
-
-
-       

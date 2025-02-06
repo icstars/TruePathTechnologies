@@ -1,9 +1,11 @@
 .chatbox{
-    /* width: 100%;
-    height: calc(90vh - 170px); */
+    width: 100%;
+    height: calc(90vh - 70px);
 }
 
 h1 {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
     color: white;
     font-size: 16px;
     line-height: 20px;

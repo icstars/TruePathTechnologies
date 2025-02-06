@@ -2,6 +2,7 @@
     width: 100%;
     padding: 3vh;
     height: 7vh;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +29,7 @@
 
     .logoVisibility {
         visibility: visible;
+        padding-left: 15px;
     }
 
 }

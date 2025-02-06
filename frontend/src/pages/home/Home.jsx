@@ -6,7 +6,9 @@ export default function Home() {
     <div className={styles.homeBox}>
       <div className={styles.homeContentBox}>
         <div className={styles.welcomeCard}>
-          <h3>ThresHub</h3>
+          <div className={styles.welcomeLogo}>
+            <img src="./logo3.png" alt="logo" />
+          </div>
           <h2>Everything you need is here... </h2>
         </div>
         <div className={styles.loginBox}>

@@ -1,17 +1,5 @@
-/* body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-} */
-
-/* #root {
-    width: 100%;
-    padding: 0 0.6rem;
-} */
-
 .loginContainer {
-
+    font-family: "Lato", serif;
     max-width: none;
     margin: 0 auto;
     border-radius: 0.5rem;
@@ -115,10 +103,10 @@
     left: 0.9rem;
     pointer-events: none;
     transform: translateY(-50%);
-    transition: 0.2s ease;  
+    transition: 0.2s ease;
 }
 
-.loginForm .inputWrapper .inputField:focus ~ i {
+.loginForm .inputWrapper .inputField:focus~i {
     color: #5f41e4;
 }
 

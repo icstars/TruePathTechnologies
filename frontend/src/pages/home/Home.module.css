@@ -18,6 +18,10 @@
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     border-radius: 20px;
     padding: 20px;
+    background-image: url(/public/bgelem.png);
+    background-size: 110%;
+    background-position: left -200px;
+    background-repeat: no-repeat;
 }
 
 .loginBox {
@@ -33,15 +37,13 @@
     padding: 20px;
 }
 
-.welcomeCard h3 {
-    color: white;
-    margin-top: 0;
-    font-size: 1.4rem;
+.welcomeLogo img {
+    width: 140px;
 }
 
 .welcomeCard h2 {
+    font-family: "Montserrat", serif;
     color: white;
-    margin-top: 10vh;
     font-size: 2.5rem;
     width: 200px;
 }
@@ -80,6 +82,8 @@
         height: fit-content;
         padding-bottom: 10vh;
         margin: 0 auto;
+        background-size: 140%;
+        background-position: left -100px;
     }
 
     .loginBox,
@@ -108,6 +112,8 @@
         height: fit-content;
         padding-bottom: 10vh;
         margin: 0 auto;
+        background-size: 140%;
+        background-position: left -60px;
     }
 
     .loginBox,
