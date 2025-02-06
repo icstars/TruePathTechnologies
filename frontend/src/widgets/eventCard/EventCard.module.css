@@ -1,0 +1,36 @@
+.eventCardBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.eventCardTitle {
+    font-size: 18px;
+    font-family: "Lato", serif;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--wp--preset--color--cyan-bluish-gray);
+}
+
+.eventCardDate {
+    font-size: 12px;
+    margin: 10px 0;
+    color: var(--wp--preset--color--purple);
+}
+
+.eventCardSummary {
+    font-size: 14px;
+    font-family: "Hind", serif;
+    color: #4d6e91;
+}
+
+.eventCardLink {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #596674;
+}
+
+.eventCardLink:hover {
+    color: #6b97c7;
+}

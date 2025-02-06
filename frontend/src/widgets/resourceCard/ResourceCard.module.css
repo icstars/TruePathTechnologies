@@ -1,0 +1,65 @@
+.resourceCardBox {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category {
+    width: fit-content;
+    background-color: rgba(228, 199, 36, 0.858);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+
+.resourceCardBox h2 {
+    border-top: 2px solid var(--wp--preset--color--light-grey);
+    padding-top: 20px;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--wp--preset--color--dark-blue);
+}
+
+.resourceCardBox p {
+    font-family: "Hind", serif;
+    font-size: 1.1em;
+    color: var(--wp--preset--color--dark-grey);
+}
+
+.resourceCardBox a {
+    color: var(--wp--preset--color--pale-cyan-blue);
+}
+
+.resourceCardBox a:hover {
+    color: var(--wp--preset--color--dark-blue);
+    text-decoration: underline;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .resourceCardBox h2 {
+        font-size: 1.2em;
+        text-align: start;
+    }
+
+    .resourceCardBox p {
+        font-size: 1em;
+        color: var(--wp--preset--color--dark-grey);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {}

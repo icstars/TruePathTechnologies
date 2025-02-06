@@ -1,0 +1,139 @@
+.homeBox {
+    background: var(--wp--preset--color--background--gradient);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.homeContentBox {
+    width: 70vw;
+    margin: 0 auto;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url(/public/bgelem.png);
+    background-size: 110%;
+    background-position: left -200px;
+    background-repeat: no-repeat;
+}
+
+.loginBox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeCard {
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+}
+
+.welcomeLogo img {
+    width: 140px;
+}
+
+.welcomeCard h2 {
+    font-family: "Montserrat", serif;
+    color: white;
+    font-size: 2.5rem;
+    width: 200px;
+}
+
+
+@media (min-width: 1660px) and (max-width: 4024px) {
+    .homeContentBox {
+        width: 1440px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .welcomeCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+        padding: 6rem;
+    }
+
+    .welcomeCard h2,
+    h3 {
+        width: 80%;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .homeBox {
+        padding: 20px;
+    }
+
+    .homeContentBox {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 10vh;
+        margin: 0 auto;
+        background-size: 140%;
+        background-position: left -100px;
+    }
+
+    .loginBox,
+    .welcomeCard {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .welcomeCard h2 {
+        width: 100%;
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .homeContentBox {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 10vh;
+        margin: 0 auto;
+        background-size: 140%;
+        background-position: left -60px;
+    }
+
+    .loginBox,
+    .welcomeCard {
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .welcomeCard h2 {
+        width: 100%;
+        margin-top: 5vh;
+        font-size: 1.8rem;
+    }
+}

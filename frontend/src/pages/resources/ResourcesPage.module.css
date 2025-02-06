@@ -1,0 +1,37 @@
+.resourcesPage {
+    width: 100%;
+    padding: 20px;
+    background-color: #ECF0F7;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.resourceCardBox {
+    height: calc(90vh - 60px);
+    overflow-y: scroll;
+}
+
+.dashTitles {
+    font-family: "Open Sans", serif;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--blue);
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .resourcesPage {
+        position: fixed;
+        top: 10vh;
+    }
+
+    .resourceCardBox {
+        max-width: 1024px;
+        height: calc(80vh - 20px);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .resourceCardBox {
+        height: calc(90vh - 160px);
+    }
+}

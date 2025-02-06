@@ -1,0 +1,49 @@
+.headerBox {
+    width: 100%;
+    padding: 3vh;
+    height: 7vh;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
+
+.logoVisibility {
+    visibility: hidden;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .headerBox {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .logoVisibility {
+        visibility: visible;
+        padding-left: 15px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .headerBox {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .logoVisibility {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,45 @@
+/* fix it later */
+.logoBox {
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    gap: 1vw;
+    width: fit-content;
+}
+
+.logoBox img {
+    width: 6vw;
+    max-width: 56px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(52, 29, 101, 0.275);
+}
+
+.logoBox span {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    color: white;
+    font-weight: 600;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .logoBox img {
+        width: 9vh;
+    }
+
+    .logoBox span {
+        color: var(--wp--preset--color--blue);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .logoBox img {
+        width: 8vh;
+    }
+
+    .logoBox span {
+        color: var(--wp--preset--color--blue);
+    }
+
+}

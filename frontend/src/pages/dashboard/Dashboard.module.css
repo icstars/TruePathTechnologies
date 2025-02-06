@@ -1,0 +1,99 @@
+.dashboardBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ECF0F7;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.eventsBox {
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.newsBox {
+    width: 340px;
+    padding: 20px;
+}
+
+.updateBox {
+    width: 100%;
+    height: calc(100vh - 300px);
+    overflow-y: scroll;
+}
+
+.dashTitles {
+    font-family: "Open Sans", serif;
+    height: 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: var(--wp--preset--color--blue);
+}
+
+.dashCalendar {
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .dashboardBox {
+        position: fixed;
+        top: 10vh;
+        flex-direction: column;
+        height: 80vh;
+        overflow-y: auto;
+    }
+
+    .newsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .eventsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .updateBox {
+        overflow-y: visible;
+    }
+
+    .dashCalendar {
+        display: none;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .dashboardBox {
+        position: fixed;
+        top: 10vh;
+        flex-direction: column;
+        height: 80vh;
+        overflow-y: auto;
+    }
+
+    .newsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .eventsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .updateBox {
+        overflow-y: visible;
+    }
+
+    .dashCalendar {
+        display: none;
+    }
+}

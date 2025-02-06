@@ -1,0 +1,34 @@
+.updatesCardBox {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.updatesCardTitle {
+    font-size: 18px;
+    font-family: "Lato", serif;
+    color: var(--wp--preset--color--dark-blue);
+}
+
+.updatesCardDate {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #596674;
+}
+
+.updatesCardSummary {
+    font-size: 14px;
+    font-family: "Hind", serif;
+}
+
+.updatesCardLink {
+    font-size: 12px;
+    margin: 10px 0;
+    color: #596674;
+}
+
+.updatesCardLink:hover {
+    color: #6b97c7;
+}
