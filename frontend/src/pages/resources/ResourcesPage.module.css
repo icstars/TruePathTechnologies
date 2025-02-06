@@ -11,6 +11,7 @@
 }
 
 .dashTitles {
+    font-family: "Open Sans", serif;
     margin-bottom: 20px;
     font-size: 1.2em;
     color: var(--wp--preset--color--blue);
@@ -18,18 +19,19 @@
 
 @media (min-width: 490px) and (max-width: 1024px) {
     .resourcesPage {
+        position: fixed;
+        top: 10vh;
     }
-    
+
     .resourceCardBox {
-        /* min-width: 490px; */
         max-width: 1024px;
-        width: 90%;
+        height: calc(80vh - 20px);
     }
 
 }
 
 @media (min-width: 320px) and (max-width: 490px) {
     .resourceCardBox {
-
+        height: calc(90vh - 160px);
     }
 }

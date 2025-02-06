@@ -6,6 +6,7 @@
 }
 
 .activeLink {
+    font-family: "Open Sans", serif;
     background-color: white;
     text-decoration: none;
     color: var(--wp--preset--color--purple);
@@ -16,9 +17,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.062) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.17) 0px -2px 6px 0px inset;
 }
 
 .link {
+    font-family: "Open Sans", serif;
     text-decoration: none;
     color: var(--wp--preset--color--white);
     margin-bottom: 15px;
@@ -28,6 +31,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.062) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.17) 0px -2px 6px 0px inset;
 }
 
 @media (min-width: 490px) and (max-width: 1024px) {
@@ -38,7 +42,7 @@
         padding: 20px;
     }
 
-    .link, 
+    .link,
     .activeLink {
         margin: 0;
         height: fit-content;
@@ -58,7 +62,7 @@
         padding: 20px;
     }
 
-    .link, 
+    .link,
     .activeLink {
         margin: 0;
         height: fit-content;

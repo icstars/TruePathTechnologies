@@ -27,13 +27,13 @@ export default function Dashboard() {
 
   return (
     <div className={styles.dashboardBox}>
-      <div className={styles.newsBox}>
+      <div className={styles.eventsBox}>
         <p className={styles.dashTitles}>Updates</p>
         {eventList.map((item) => (
           <EventCard key={item.date} {...item} />
         ))}
       </div>
-      <div className={styles.eventsBox}>
+      <div className={styles.newsBox}>
         <div className={styles.dashCalendar}>
           <Calendar showWeekNumbers value={value} />
         </div>

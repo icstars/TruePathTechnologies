@@ -23,7 +23,7 @@ export default function ProfileCard({
       <div className={styles.profileTitle}>
         <h2>{display_name}</h2>
         <h2>{department_code}</h2>
-        <h2>{job_title}</h2>
+        <p>{job_title}</p>
       </div>
       </div>
       

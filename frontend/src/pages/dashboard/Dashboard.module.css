@@ -7,25 +7,26 @@
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
+.eventsBox {
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.newsBox {
+    width: 340px;
+    padding: 20px;
+}
+
 .updateBox {
     width: 100%;
     height: calc(100vh - 300px);
     overflow-y: scroll;
 }
-.newsBox, .eventsBox {
-    padding: 20px;
-}
-
-.newsBox {
-    height: 80vh;
-    overflow-y: scroll;
-}
-
-.eventsBox {
-    width: 340px;
-}
 
 .dashTitles {
+    font-family: "Open Sans", serif;
+    height: 20px;
     margin: 10px 0;
     font-size: 1.2em;
     color: var(--wp--preset--color--blue);
@@ -38,22 +39,29 @@
 
 @media (min-width: 490px) and (max-width: 1024px) {
     .dashboardBox {
+        position: fixed;
+        top: 10vh;
         flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        }
+        height: 80vh;
+        overflow-y: auto;
+    }
 
-        .newsBox {
-            height: 100%;
-            overflow-y: visible;
-        }
+    .newsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
 
-        .eventsBox {
-           width: 100%;
-           height: 100%;
-            overflow-y: visible;
-        }
-    
+    .eventsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .updateBox {
+        overflow-y: visible;
+    }
+
     .dashCalendar {
         display: none;
     }
@@ -62,15 +70,30 @@
 
 @media (min-width: 320px) and (max-width: 490px) {
     .dashboardBox {
+        position: fixed;
+        top: 10vh;
         flex-direction: column;
-        overflow-y: scroll;
+        height: 80vh;
+        overflow-y: auto;
     }
-    .newsBox, .eventsBox {
+
+    .newsBox {
         width: 100%;
-        padding: 5px;
-        margin: 0 auto;
+        height: fit-content;
+        overflow-y: visible;
     }
 
+    .eventsBox {
+        width: 100%;
+        height: fit-content;
+        overflow-y: visible;
+    }
+
+    .updateBox {
+        overflow-y: visible;
+    }
+
+    .dashCalendar {
+        display: none;
+    }
 }
-
-

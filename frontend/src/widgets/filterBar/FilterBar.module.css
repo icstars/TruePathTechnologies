@@ -1,19 +1,23 @@
-.filterBar{
+.filterBar {
     margin: 20px auto;
-    background: #ffffff96;
+    background: #ffffffad;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    border-radius: 10px;
 }
 
 .inputWrapper {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
-    transition: 0.2s ease; 
-    
+    justify-content: space-between;
+    transition: 0.2s ease;
+    margin-bottom: 10px;
 }
 
 .inputWrapper input {
+    font-family: "Montserrat", serif;
+    width: 100%;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 5px;
     height: 20px;
@@ -28,10 +32,36 @@
     margin-right: 10px;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 5px;
+    font-family: "Montserrat", serif;
 }
 
 .filterBox button {
     background: white;
     border: 1px solid rgb(176, 176, 176);
     border-radius: 5px;
+    text-transform: uppercase;
+    padding: 5px;
+    width: fit-content;
+}
+
+.filterBox button i {
+    font-size: 1rem;
+}
+
+@media (min-width: 490px) and (max-width: 1024px) {
+    .filterBox {
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 490px) {
+    .filterBox {
+        flex-direction: column;
+    }
+
+    .inputWrapper {
+        flex-wrap: wrap;
+    }
+
 }
